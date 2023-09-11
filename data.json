@@ -1,49 +1,118 @@
-
-  [
-        {
-            "name" : "Sweet Jelly ",
-            "desc" : "Toast Bread, Cream, choco etc.",
-            "img" : "https://2.bp.blogspot.com/-BxvJciEJ1pM/YI-e2zPBvWI/AAAAAAAABcU/dN8-pCPE8_IWqn3QmDX5lsKMBlT5WJ11gCK4BGAYYCw/s1600/Cooking-Icon-10.png"
+[
+    {
+        "name": "Sandwich",
+        "desc": "Toast Bread, Cream, Choco etc.",
+        "steps": {
+            "step1": "Take two slices of bread.",
+            "step2": "Spread a layer of cream on one slice.",
+            "step3": "Add chocolate chips on top of the cream.",
+            "step4": "Place the other slice of bread on top to make a sandwich.",
+            "step5": "Toast the sandwich in a toaster or on a pan until it turns golden brown.",
+            "step6": "Remove from heat, let it cool slightly, and enjoy!"
         },
-        {
-            "name" : "Donuts Receipe",
-            "desc" : "Double Brown Bread etc.",
-            "img" : "https://1.bp.blogspot.com/-yf4_hvYrJFk/YI-fAdVmlTI/AAAAAAAABcc/SXL-nx44b8ooJ7ffYn0cLnBOcL9vsCD0QCK4BGAYYCw/s1600/Cooking-Icon-9.png"
+        "img": "https://2.bp.blogspot.com/-BxvJciEJ1pM/YI-e2zPBvWI/AAAAAAAABcU/dN8-pCPE8_IWqn3QmDX5lsKMBlT5WJ11gCK4BGAYYCw/s1600/Cooking-Icon-10.png"
+    },
+    {
+        "name": "Donuts Recipe",
+        "desc": "Double Brown Bread etc.",
+        "steps": {
+            "step1": "Take a slice of double brown bread.",
+            "step2": "Cut a hole in the center of the bread slice using a round cookie cutter.",
+            "step3": "Heat some oil in a pan.",
+            "step4": "Fry the bread slice until it becomes crispy and golden brown.",
+            "step5": "Remove from the pan and let it cool slightly.",
+            "step6": "Dust with powdered sugar and serve."
         },
-        {
-            "name" : "Eggs Pasta Receipe",
-            "desc" : "Eggs, Cauliflower, Bread etc",
-            "img" : "https://3.bp.blogspot.com/-9OuPv7TMqOE/YI-fHtwPvDI/AAAAAAAABco/TQRDoA___fQo92CDMrPtrYNyz_JlYohSwCK4BGAYYCw/s1600/Cooking-Icon-8.png"
+        "img": "https://1.bp.blogspot.com/-yf4_hvYrJFk/YI-fAdVmlTI/AAAAAAAABcc/SXL-nx44b8ooJ7ffYn0cLnBOcL9vsCD0QCK4BGAYYCw/s1600/Cooking-Icon-9.png"
+    },
+    {
+        "name": "Eggs Pasta Recipe",
+        "desc": "Eggs, Cauliflower, Bread etc",
+        "steps": {
+            "step1": "Boil pasta until it's al dente. Drain and set aside.",
+            "step2": "In a pan, heat olive oil and add cauliflower florets. Cook until they are tender.",
+            "step3": "Add beaten eggs to the pan and scramble them with the cauliflower.",
+            "step4": "Season with salt and pepper.",
+            "step5": "Add the cooked pasta to the pan and toss everything together.",
+            "step6": "Serve hot with a sprinkle of grated cheese."
         },
-        {
-            "name" : "Choco Pizza Receipe",
-            "desc" : "Chocolate, Vannila Bread etc.",
-            "img" : "https://4.bp.blogspot.com/-_Xw5ik6aW8M/YI-fSnZkgXI/AAAAAAAABc0/C_WZasM8VJg03gDLMVXQ2619PKlMvsK4QCK4BGAYYCw/s1600/Cooking-Icon-7.png"
+        "img": "https://3.bp.blogspot.com/-9OuPv7TMqOE/YI-fHtwPvDI/AAAAAAAABco/TQRDoA___fQo92CDMrPtrYNyz_JlYohSwCK4BGAYYCw/s1600/Cooking-Icon-8.png"
+    },
+    {
+        "name": "Choco Pizza Recipe",
+        "desc": "Chocolate, Vanilla Bread etc.",
+        "steps": {
+            "step1": "Take a slice of vanilla bread as the pizza crust.",
+            "step2": "Spread a layer of chocolate sauce on the bread.",
+            "step3": "Sprinkle chocolate chips and marshmallows on top.",
+            "step4": "Bake in the oven until the chocolate and marshmallows are melted and bubbly.",
+            "step5": "Remove from the oven and let it cool slightly.",
+            "step6": "Slice and enjoy your chocolate pizza!"
         },
-        
-        {
-            "name" : "Butter Bread Receipe",
-            "desc" : "Fresh Breads, Butter, Cheese etc",
-            "img" : "https://1.bp.blogspot.com/-8-_2nRDfsGI/YI-fdVum4cI/AAAAAAAABc8/e52Iort9K_86b3-lxgPQVHHI-P2JRadxwCK4BGAYYCw/s1600/Cooking-Icon-6.png"
+        "img": "https://4.bp.blogspot.com/-_Xw5ik6aW8M/YI-fSnZkgXI/AAAAAAAABc0/C_WZasM8VJg03gDLMVXQ2619PKlMvsK4QCK4BGAYYCw/s1600/Cooking-Icon-7.png"
+    },
+    {
+        "name": "Butter Bread Recipe",
+        "desc": "Fresh Breads, Butter, Cheese etc",
+        "steps": {
+            "step1": "Take two slices of fresh bread.",
+            "step2": "Spread butter on one side of each slice.",
+            "step3": "Place slices of cheese between the two buttered sides.",
+            "step4": "Heat a pan and place the sandwich in it.",
+            "step5": "Toast until the bread turns golden brown and the cheese melts.",
+            "step6": "Remove from heat, slice, and serve."
         },
-        {
-            "name" : "Creamy Strawberry",
-            "desc" : "Strawberry, Milk cream etc",
-            "img" : "https://3.bp.blogspot.com/-lDr6u102pYo/YI-fsML5guI/AAAAAAAABdI/BEMoUJltyFERtbT9MUSRtyNFHjqwWfmlACK4BGAYYCw/s1600/Cooking-Icon-5.png"
+        "img": "https://1.bp.blogspot.com/-8-_2nRDfsGI/YI-fdVum4cI/AAAAAAAABc8/e52Iort9K_86b3-lxgPQVHHI-P2JRadxwCK4BGAYYCw/s1600/Cooking-Icon-6.png"
+    },
+    {
+        "name": "Creamy Strawberry",
+        "desc": "Strawberry, Milk cream etc",
+        "steps": {
+            "step1": "Wash and hull fresh strawberries.",
+            "step2": "Blend strawberries with milk cream until smooth.",
+            "step3": "Pour the creamy strawberry mixture into serving glasses.",
+            "step4": "Chill in the refrigerator for a few hours.",
+            "step5": "Serve cold and garnish with fresh strawberries."
         },
-        {
-            "name" : "Dora Cakes Receipe",
-            "desc" : "Pan, Choco, Breads Cutter etc",
-            "img" : "https://3.bp.blogspot.com/-Y8_Op18rYYM/YI-f1kQrhSI/AAAAAAAABdU/Msap5OCNd8wgu7scR10qOlBAcB20gWxeQCK4BGAYYCw/s1600/Cooking-Icon-2.png"
+        "img": "https://3.bp.blogspot.com/-lDr6u102pYo/YI-fsML5guI/AAAAAAAABdI/BEMoUJltyFERtbT9MUSRtyNFHjqwWfmlACK4BGAYYCw/s1600/Cooking-Icon-5.png"
+    },
+    {
+        "name": "Dora Cakes Recipe",
+        "desc": "Pan, Choco, Breads Cutter etc",
+        "steps": {
+            "step1": "Prepare the batter by mixing flour, sugar, and chocolate chips.",
+            "step2": "Heat a pan and grease it with butter.",
+            "step3": "Pour a ladle of batter into the pan and cook until bubbles appear on the surface.",
+            "step4": "Flip the cake and cook the other side until golden brown.",
+            "step5": "Remove from the pan and cut into small rounds using a bread cutter.",
+            "step6": "Serve these delicious Dora Cakes."
         },
-        {
-            "name" : "Cookies Coffee Receipe",
-            "desc" : "Water, Beans choco etc",
-            "img" : "https://1.bp.blogspot.com/-e49TOiNNIt8/YI-f_5VgyYI/AAAAAAAABdg/YAa0ywUxaE4a8T0j3vwq6fL_p3BF4Dy_ACK4BGAYYCw/s1600/Cooking-Icon.png"
+        "img": "https://3.bp.blogspot.com/-Y8_Op18rYYM/YI-f1kQrhSI/AAAAAAAABdU/Msap5OCNd8wgu7scR10qOlBAcB20gWxeQCK4BGAYYCw/s1600/Cooking-Icon-2.png"
+    },
+    {
+        "name": "Cookies Coffee Recipe",
+        "desc": "Water, Beans choco etc",
+        "steps": {
+            "step1": "Brew a strong cup of coffee.",
+            "step2": "Dip chocolate cookies into the coffee for a few seconds.",
+            "step3": "Place the dipped cookies on a plate.",
+            "step4": "Repeat the process with a few more cookies.",
+            "step5": "Serve with a glass of cold water or milk.",
+            "step6": "Enjoy your cookies and coffee!"
         },
-        {
-            "name" : "Brown Bread Receipe",
-            "desc" : "Eggs, brown Bread, Cream etc",
-            "img" : "https://2.bp.blogspot.com/-_Gms8BLQ-ow/YI-gqEXoI7I/AAAAAAAABdw/aI_HXQP-qtone-rMk_XCjJ6S7itUETyNACK4BGAYYCw/s1600/Cooking-Icon-16.png"
-        }
-    ]
+        "img": "https://1.bp.blogspot.com/-e49TOiNNIt8/YI-f_5VgyYI/AAAAAAAABdg/YAa0ywUxaE4a8T0j3vwq6fL_p3BF4Dy_ACK4BGAYYCw/s1600/Cooking-Icon.png"
+    },
+    {
+        "name": "Brown Bread Recipe",
+        "desc": "Eggs, Brown Bread, Cream etc",
+        "steps": {
+            "step1": "Take two slices of brown bread.",
+            "step2": "Spread a layer of cream on one slice.",
+            "step3": "Scramble eggs and spread them on the other slice.",
+            "step4": "Put the slices together to make a sandwich.",
+            "step5": "Toast the sandwich in a toaster or on a pan until it's crispy.",
+            "step6": "Slice and serve your delicious brown bread sandwich!"
+        },
+        "img": "https://2.bp.blogspot.com/-_Gms8BLQ-ow/YI-gqEXoI7I/AAAAAAAABdw/aI_HXQP-qtone-rMk_XCjJ6S7itUETyNACK4BGAYYCw/s1600/Cooking-Icon-16.png"
+    }
+]

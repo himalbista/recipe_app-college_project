@@ -271,7 +271,7 @@ hr{
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 20px;
-    background-color: #d2dae2;
+    background-color: #6baae5;
     color: black;
     padding: 5px;
     cursor: pointer;
@@ -340,7 +340,7 @@ hr{
     /* transform: translate(-50%,-50%); */
     /* display: none; */
     border-radius: 10px;
-    box-shadow: 2px 2px 2px red, -2px -2px 2px red;
+    box-shadow: 2px 2px 2px rgb(235, 230, 230), -2px -2px 2px rgb(231, 229, 229);
 }
 
 .fa-plus{
@@ -354,7 +354,6 @@ hr{
     /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfqlWR7aVPrAHTK0iF64aebSEZlTt8MFZt6g&usqp=CAU'); */
     width: 14px;
     height: 14px;
-    background-color: red;
     right: 0;
     top: 0;
     border-radius: 50%;
@@ -488,7 +487,8 @@ hr{
     }
 }
 /*-----------------Add Product Css---------------*/
-.addProductPage{
+/* Default styles for larger screens */
+.addProductPage {
     height: 100vh;
     width: 100vw;
     background-color: #1B2028;
@@ -498,31 +498,75 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-#addpd{
+
+textarea {
     display: flex;
     flex-wrap: wrap;
     box-shadow: 2px 2px 5px var(--primaryColour), -2px -2px 5px var(--primaryColour);
     padding: 10px 20px;
 }
-caption{
+
+caption {
     padding: 10px 0px;
     font-size: 18px;
     font-weight: bold;
     color: var(--primaryColour);
 }
-input[type='submit']{
+
+input[type='text'],
+input[type='submit'],
+textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #3B4252;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-align: center; /* Center-align text within form elements */
+}
+
+input[type='submit'] {
     margin-top: 10px;
-    padding: 5px 10px;
     background-color: var(--primaryColour);
     color: var(--black);
-    border: none;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    /* font-size: 10px; */
+    transition: background-color 0.3s ease;
 }
-textarea{
-    width: 100%;
+
+input[type='submit']:hover {
+    background-color: #4C566A;
 }
+
+textarea {
+    min-height: 100px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .addProductPage {
+        padding: 20px;
+    }
+
+    #addpd {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    caption {
+        font-size: 24px; /* Increase caption font size */
+    }
+
+    input[type='text'],
+    input[type='submit'],
+    textarea {
+        text-align: center; /* Center-align text within form elements */
+    }
+}
+
+
+/* Additional media queries for even smaller screens can be added as needed */

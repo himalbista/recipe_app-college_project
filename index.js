@@ -124,40 +124,51 @@ fetch('/data.json')
     console.error('Error:', error);
   });
 
-  const Search = () => {
-    let filter = document.getElementById('search-input').value.replace(/\s/g, "").toUpperCase();
-    let result = document.getElementsByClassName('search-result')[0]; 
-    result.style.display = "none"; 
-    result.innerHTML = ""; 
-    for (let i = 0; i < data.length; i++) {
-      let checkData = data[i].name.replace(/\s/g, "").toUpperCase();
-      if (checkData.includes(filter)) {
-        result.style.display = "block";
-  
-        const itemDiv = document.createElement('div');
-        itemDiv.classList.add('result-box');
-  
-        const item = data[i]; 
-  
-        const titleElement = document.createElement('h2');
-        titleElement.textContent = item.name;
-  
-        const imageElement = document.createElement('img');
-        imageElement.src = item.img;
-  
-        itemDiv.appendChild(imageElement);
-        itemDiv.appendChild(titleElement);
-  
-        result.appendChild(itemDiv);
-  
-        itemDiv.addEventListener('click', () => {
-          console.log(item);
-          displayPostDetails(item, i); 
-          result.style.display = "none"; 
-        });
-      }
+  const searchInput = document.getElementById('search-input');
+const searchResult = document.querySelector('.search-result');
+
+searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.trim().toUpperCase();
+
+    if (searchTerm === '') {
+        searchResult.style.display = 'none';
+        searchResult.innerHTML = '';
+        return;
     }
-  };
+
+    const results = data.filter(item => item.name.toUpperCase().includes(searchTerm));
+
+    if (results.length === 0) {
+        searchResult.style.display = 'block';
+        searchResult.innerHTML = '<p>No results found.</p>';
+    } else {
+        searchResult.style.display = 'block';
+        searchResult.innerHTML = '';
+
+        results.forEach(resultItem => {
+            const resultDiv = document.createElement('div');
+            resultDiv.classList.add('result-box');
+
+            const resultTitle = document.createElement('h2');
+            resultTitle.textContent = resultItem.name;
+
+            const resultImage = document.createElement('img');
+            resultImage.src = resultItem.img;
+
+            resultDiv.appendChild(resultImage);
+            resultDiv.appendChild(resultTitle);
+
+            resultDiv.addEventListener('click', () => {
+                displayPostDetails(resultItem);
+                searchResult.style.display = 'none';
+                searchInput.value = ''; // Clear the search input
+            });
+
+            searchResult.appendChild(resultDiv);
+        });
+    }
+});
+
 
 //   let  postdetailscontainer = document.getElementsByClassName('post-details-container');
 //   const RoutePage = ()=>{
@@ -173,34 +184,41 @@ fetch('/data.json')
 //         console.log(postdetailscontainer);
 // }
 
-  function displayPostDetails(item, index){
-    // window.location.href = "/post.html";
-    // RoutePage();
-    console.log(item);
-     const postdetails = document.getElementById('postdetails');
-     console.log(postdetails);
-     console.log(item.name);
-     postdetails.classList.add('postdetails');
+function displayPostDetails(item) {
+  const postdetails = document.getElementById('postdetails');
+  postdetails.classList.add('postdetails');
 
-     const itemDiv = document.createElement('div');
-     const titleElement = document.createElement('h2');
-     titleElement.textContent = item.name;
-     const desc = document.createElement('p');
-     desc.textContent = item.desc;
-     const imageElement = document.createElement('img');
-     imageElement.src = item.img;
+  const itemDiv = document.createElement('div');
+  const titleElement = document.createElement('h2');
+  titleElement.textContent = item.name;
+  const desc = document.createElement('p');
+  desc.textContent = item.desc;
+  const imageElement = document.createElement('img');
+  imageElement.src = item.img;
 
-     const fulldesc = document.createElement('p');
-     fulldesc.textContent = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rerum quisquam a dolorum id, dignissimos delectus facere voluptatem voluptas soluta consequuntur facilis quos nobis laboriosam. Reprehenderit sunt mollitia id natus. ";
-     itemDiv.appendChild(imageElement);
-     itemDiv.appendChild(titleElement);
-     itemDiv.appendChild(desc);
-     itemDiv.appendChild(fulldesc)
+  itemDiv.appendChild(imageElement);
+  itemDiv.appendChild(titleElement);
+  itemDiv.appendChild(desc);
 
-     postdetails.appendChild(itemDiv);
+  const stepsElement = document.createElement('div');
+  stepsElement.classList.add('steps');
 
-     itemDiv.classList.add('post-details-container')
+  for (const step in item.steps) {
+    if (item.steps.hasOwnProperty(step)) {
+      const stepElement = document.createElement('p');
+      stepElement.textContent = `${step}: ${item.steps[step]}`;
+      stepsElement.appendChild(stepElement);
+    }
   }
+
+  itemDiv.appendChild(stepsElement);
+
+  postdetails.appendChild(itemDiv);
+
+  itemDiv.classList.add('post-details-container');
+}
+
+
   console.log(Index);
 
 
@@ -228,3 +246,4 @@ existing && existing.push(newObject);
 localStorage.setItem("data", existing ? JSON.stringify(existing) : JSON.stringify([newObject]));
 }
 
+//Form Valiadation
